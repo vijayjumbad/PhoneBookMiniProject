@@ -1,0 +1,19 @@
+phonebook:
+  messages:
+    savefail: failed to contact saved
+    savesucc: contact saved successfully
+    updatesucc: contact update successfully
+server:
+  port: 8181
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: ''
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
